@@ -1,0 +1,24 @@
+CREATE DATABASE CargaCVS;
+
+USE CargaCVS;
+
+create table CargaCVS(
+                         Id int,
+                         Nombre varchar(50),
+                         Apellido varchar(50),
+                         Curso varchar(50),
+                         Activo bit);
+
+DROP TABLE CargaCVS;
+
+select * from CargaCVS;
+
+
+
+CREATE TABLE `cargacvs` (
+  `Id` int DEFAULT NULL,
+  `Nombre` varchar(50) DEFAULT NULL,
+  `Apellido` varchar(50) DEFAULT NULL,
+  `Curso` varchar(50) DEFAULT NULL,
+  `Activo` bit(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
